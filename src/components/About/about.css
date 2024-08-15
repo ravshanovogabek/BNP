@@ -1,0 +1,36 @@
+.about {
+    padding: 20px;
+  }
+  
+  .about h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .about p {
+    margin-bottom: 20px;
+  }
+  
+  .about-links {
+    margin-top: 20px;
+  }
+  
+  .about-link {
+    display: inline-block;
+    margin-right: 10px;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .about-link:hover {
+    text-decoration: underline;
+  }
+  
+  .team, .testimonials {
+    margin-top: 30px;
+  }
+  
+  .team-member, .testimonial {
+    margin-bottom: 20px;
+  }
+  
