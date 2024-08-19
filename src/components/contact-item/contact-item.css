@@ -1,0 +1,50 @@
+/* General Styles */
+.contact-navbar {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .contact-items {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-items:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .contact-img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .contact-link {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .span-title {
+    font-weight: bold;
+  }
+  
+  /* Responsive Styles */
+  @media (min-width: 600px) {
+    .contact-navbar {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+  

@@ -1,6 +1,8 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './home.css'; // Styles for Home
 import AOS from 'aos';
+
+
 import 'aos/dist/aos.css';
 
 
@@ -8,11 +10,14 @@ import 'aos/dist/aos.css';
 
 
 const Home = () => {
+  useEffect(() => {
+     AOS.init({ duration: 2000 });
+  }, []);
   return (
     <div className="home">
       <div className="hero-box">
         <img 
-          src="https://bnpfabrik.vercel.app/assets/mebel1-npptRuJS.png" 
+          src="https://bnpfabric-woad.vercel.app/assets/hero-D_tj0uTK.png" 
           alt="Spalni" 
           className="hero-image" 
         />
@@ -20,7 +25,7 @@ const Home = () => {
           <h1 className="hero-title">Bukhara</h1>
           <p className="hero-subtitle">Natural Products</p>
         </div>
-        <ul className="hero-box-list">
+        {/* <ul className="hero-box-list">
           <li className="hero-box-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
             <img src="data:image/svg+xml,%3c?xml%20version=%271.0%27%20encoding=%27UTF-8%27?%3e%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20width=%2769.613%27%20height=%2740%27%20viewBox=%270%200%2069.613%2040%27%3e%3cdefs%3e%3cstyle%3e.a{fill:%23f42c37;}%3c/style%3e%3c/defs%3e%3cg%20transform=%27translate(-5.009%20-24.149)%27%3e%3cg%20transform=%27translate(5.009%2024.149)%27%3e%3cpath%20class=%27a%27%20d=%27M76.464,52.063,74.559,41.837A10.444,10.444,0,0,0,64.3,33.349H54.944a10.449,10.449,0,0,0-10.343-9.2H20.71a8.031,8.031,0,0,0-6.933,3.912,1.123,1.123,0,0,0,1.922,1.16,5.8,5.8,0,0,1,5.011-2.826H44.6a8.189,8.189,0,0,1,8.17,8.078v22.2H33.911a6.34,6.34,0,0,0-12.483,0h-.719A5.843,5.843,0,0,1,15.862,54.1,1.123,1.123,0,0,0,14,55.361a8.084,8.084,0,0,0,6.708,3.559h.713a6.347,6.347,0,0,0,12.5,0H52.857a6.347,6.347,0,0,0,12.5,0h5.454a5.752,5.752,0,0,0,5.658-6.858ZM27.648,61.9a4.1,4.1,0,0,1,0-8.209,4.1,4.1,0,1,1,0,8.209Zm31.434,0A4.085,4.085,0,0,1,55,57.911a1.111,1.111,0,0,0,.012-.114v-.3a4.1,4.1,0,1,1,4.066,4.4Zm14.441-6.5a3.508,3.508,0,0,1-2.715,1.273h-5.46a6.38,6.38,0,0,0-6.264-5.227,6.265,6.265,0,0,0-4.065,1.5V35.594H64.3a8.2,8.2,0,0,1,8.05,6.656l1.906,10.231A3.523,3.523,0,0,1,73.523,55.4Z%27%20transform=%27translate(-6.957%20-24.149)%27%3e%3c/path%3e%3cpath%20class=%27a%27%20d=%27M18.105,40.6a1.123,1.123,0,0,0-1.123-1.123H6.132a1.123,1.123,0,0,0,0,2.245H16.983A1.123,1.123,0,0,0,18.105,40.6Z%27%20transform=%27translate(-5.009%20-27.619)%27%3e%3c/path%3e%3cpath%20class=%27a%27%20d=%27M18.941,51.984a1.123,1.123,0,0,0-1.123-1.123h-8a1.123,1.123,0,1,0,0,2.245h8A1.123,1.123,0,0,0,18.941,51.984Z%27%20transform=%27translate(-5.845%20-30.196)%27%3e%3c/path%3e%3c/g%3e%3c/g%3e%3c/svg%3e" alt="logo2" className="hero-logo2" />
             <nav className="hero-box-navbar">
@@ -52,10 +57,10 @@ const Home = () => {
               <p className="hero-box-navbar-text">All payment methods accepted</p>
             </nav>
           </li>
-        </ul>
+        </ul> */}
 
 
-
+{/* 
         <div className="header">
           <div className="container">
             <div className="header-list aos-init aos-animate" data-aos="fade-up">
@@ -298,7 +303,7 @@ const Home = () => {
               </li>
             </ul>
           
-        </div>
+        </div> */}
       </div>
     </div>
   );

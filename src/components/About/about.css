@@ -1,36 +1,78 @@
-.about {
-    padding: 20px;
+/* styles.css */
+
+.haqimizda-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f7f7f7;
+  font-family: Arial, sans-serif;
+}
+
+.haqimisda-item {
+  flex: 1;
+  min-width: 300px;
+  max-width: 800px;
+  background: #ffffff;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.haqimizda-title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.haqimizda-text {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.haqimizda-img {
+  flex: 1;
+  max-width: 100%;
+  height: auto;
+  margin: 20px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .haqimizda-list {
+    flex-direction: column;
   }
-  
-  .about h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
+
+  .haqimisda-item {
+    padding: 15px;
+    margin: 15px;
   }
-  
-  .about p {
-    margin-bottom: 20px;
+
+  .haqimizda-title {
+    font-size: 22px;
   }
-  
-  .about-links {
-    margin-top: 20px;
+
+  .haqimizda-text {
+    font-size: 14px;
   }
-  
-  .about-link {
-    display: inline-block;
-    margin-right: 10px;
-    color: #007bff;
-    text-decoration: none;
+}
+
+@media (max-width: 480px) {
+  .haqimisda-item {
+    padding: 10px;
+    margin: 10px;
   }
-  
-  .about-link:hover {
-    text-decoration: underline;
+
+  .haqimizda-title {
+    font-size: 20px;
   }
-  
-  .team, .testimonials {
-    margin-top: 30px;
+
+  .haqimizda-text {
+    font-size: 12px;
   }
-  
-  .team-member, .testimonial {
-    margin-bottom: 20px;
-  }
-  
+}
