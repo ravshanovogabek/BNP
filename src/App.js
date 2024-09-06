@@ -12,7 +12,7 @@ import ContactLayout from './components/ContactLayout';
 function App() {
   return (
     <Router>
-      <div>
+      <div class>
         <Navbar />
         <Routes>
           <Route path="/" element={<HomeLayout />} />
